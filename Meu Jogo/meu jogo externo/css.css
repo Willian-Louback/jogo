@@ -1,0 +1,17 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0; 
+    /*margin: 0;*/
+}
+.sumir{
+    color: red;
+}
+.tematica{
+    background-color: black;
+    color: white;
+    /*height: 100hv;*/
+}
+.button-tema{
+     cursor: pointer;
+     margin-top: 0px;
+}
