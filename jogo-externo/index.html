@@ -8,23 +8,28 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https: //fonts.googleapis.com/css2? family= Roboto & display=swap" rel="stylesheet">   
         <script src="logica.js"></script>
-        <title>Willian</title>
-        <hr><h1 align="center">Meu jogo!</h1><hr>
+        <title>LogikRandom</title>
     </head>
-    <body id="caracol">
-        <header id="teste">
-            <h2 class="sumir">Joguinho top.</h2>
-            <p class="sumir">(Versão de teste)</p>
-            <p class="sumir">Eu estou pensando em um número... Tente adivinhar ele!</p>
+    <body id="temas">
+        <header>
+            <hr class="linha"><h1 id="title">LogikRandom</h1><hr class="linha">
         </header>
-        <br="apareça">
-        <div id="dica"></div><br id="apareça">
-        <span>Sua tentativa:</span>
+        <section1>
+            <h2>(Versão de teste)</h2>
+            <p id="p" class="text">Eu estou pensando em um número... Tente adivinhar ele!</p>
+            <button class="button" id="tema" onclick="tema()">Mudar para tema escuro</button>
+        </section1><br id="aparecer" style="display: none;">
+        <span class="text" id="dica"></span>
+        <span id="altura" class="text">Sua tentativa:</span>
         <input type="number" id="input" placeholder="Digite aqui..." value=""/>
         <button class="button" id="gerar" onclick="gerar1()">Tente</button>
-        <div id="dica2"></div>
+        <span class="text" id="dica2"></span>
         <h3 id="win"></h3>
-        <br><button id="gerar2" align="center" style="visibility : hidden" onclick="window.location.reload()">Jogar de novo</button>
-        <button class="button-tema" id="tema" onclick="tema()">Mudar para tema escuro</button>
+        <button class="button" id="gerar2" align="center" onclick="window.location.reload()">Jogar de novo</button>
+        <hr class="linha">
+        <footer>
+            <!-- <a href="fase2.html">fase2</a> -->
+            <span>Desenvolvido por Willian</span>
+        </footer>
     </body>
 </html>

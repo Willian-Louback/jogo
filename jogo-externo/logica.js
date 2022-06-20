@@ -8,7 +8,7 @@
             function gerar1(){
             var resposta = parseInt(document.getElementById('input').value);
                 if (numeroA > 0 < 101){
-                document.getElementById("dica").innerHTML = "O número está entre 0 e 100...";
+                document.getElementById("dica").innerHTML = "(O número está entre 0 e 100...)";
                 }
                 if (numeroA != resposta){
                     document.getElementById("input").value= "";
@@ -19,11 +19,11 @@
                     document.getElementById("dica2").innerHTML = "Tente novamente, o número é maior do que "+resposta+".";
                 } else if (numeroA === resposta){
                     document.getElementById("win").innerHTML = "Parabéns, você acertou o número!";
-                    var elementoA = document.getElementById("dica2");
-                    elementoA.remove(elementoA);
- document.getElementById("gerar2").style.visibility = "visible";
-                    var elementoB = document.getElementById("dica");
-                    elementoB.remove(elementoB);
+                    document.getElementById("dica2").style.display = "none";
+                    document.getElementById("gerar2").style.display = "block";
+                    document.getElementById("dica").style.display ="none";
+                    document.getElementById("p").style.display = "none";
+                    document.getElementById("aparecer").style.display = "block";
                 }
               }
           function enter(){
@@ -31,7 +31,7 @@
                 case 13:
                 var resposta = parseInt(document.getElementById('input').value);
                 if (numeroA > 0 < 101){
-                document.getElementById("dica").innerHTML = "O número está entre 0 e 100...";
+                document.getElementById("dica").innerHTML = "(O número está entre 0 e 100...)";
                 }
                 if (numeroA != resposta){
                     document.getElementById("input").value= "";
@@ -42,16 +42,16 @@
                     document.getElementById("dica2").innerHTML = "Tente novamente, o número é maior do que "+resposta+".";
                 } else if (numeroA === resposta){
                     document.getElementById("win").innerHTML = "Parabéns, você acertou o número!";
-                    var elementoA = document.getElementById("dica2");
-                    elementoA.remove(elementoA);
- document.getElementById("gerar2").style.visibility = "visible";
-                    var elementoB = document.getElementById("dica");
-                    elementoB.remove(elementoB);
+                    document.getElementById("dica2").style.display = "none";
+                    document.getElementById("gerar2").style.display = "block";
+                    document.getElementById("dica").style.display = "none";
+                    document.getElementById("p").style.display = "none";
+                    document.getElementById("aparecer").style.display = "block";
                 }
                }
               }
             function tema() {
-                var tema = document.getElementById("caracol");
+                var tema = document.getElementById("temas");
                 if (tema.classList.contains("tematica") == false){
                     tema.classList.add("tematica");
                     document.getElementById("tema").innerHTML = "Mudar para tema claro ";
