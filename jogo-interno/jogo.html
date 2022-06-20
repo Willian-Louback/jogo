@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="css.css" media="screen" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https: //fonts.googleapis.com/css2? family= Roboto & display=swap" rel="stylesheet">
+        <style type="text/css">
+            *{
+    
+            }
+                .sumir{
+                color: red;
+            }
+            .tematica{
+                background-color: black;
+                color: white;
+                height: 100hv;
+            };
+        </style>
+        <script defer>
+            //document.getElementsByClassNameq
+            //console.log("Meu jogo");
+            //window.location.reload(forcedReload);
+            //alert("Site seguro!");
+            numeroA = Math.floor(100*Math.random()+1);
+            document.addEventListener("keydown", enter);
+            console.log(numeroA);
+            function gerar1(){
+            var resposta = parseInt(document.getElementById('input').value);
+                if (numeroA > 0 < 101){
+                document.getElementById("dica").innerHTML = "O número está entre 0 e 100...";
+                }
+                if (numeroA != resposta){
+                    document.getElementById("input").value= "";
+                }
+                if (numeroA < resposta){
+                    document.getElementById("dica2").innerHTML = "Tente novamente, o número é menor do que "+resposta+".";
+                } else if (numeroA > resposta){
+                    document.getElementById("dica2").innerHTML = "Tente novamente, o número é maior do que "+resposta+".";
+                } else if (numeroA === resposta){
+                    document.getElementById("win").innerHTML = "Parabéns, você acertou o número!";
+                    var elementoA = document.getElementById("dica2");
+                    elementoA.remove(elementoA)
+ document.getElementById("gerar2").style.visibility = "visible";
+                }
+              }
+          function enter(){
+             switch (event.keyCode){
+                case 13:
+                var resposta = parseInt(document.getElementById('input').value);
+                if (numeroA > 0 < 101){
+                document.getElementById("dica").innerHTML = "O número está entre 0 e 100...";
+                }
+                if (numeroA != resposta){
+                    document.getElementById("input").value= "";
+                }
+                if (numeroA < resposta){
+                    document.getElementById("dica2").innerHTML = "Tente novamente, o número é menor do que "+resposta+".";
+                } else if (numeroA > resposta){
+                    document.getElementById("dica2").innerHTML = "Tente novamente, o número é maior do que "+resposta+".";
+                } else if (numeroA === resposta){
+                    document.getElementById("win").innerHTML = "Parabéns, você acertou o número!";
+                    var elementoA = document.getElementById("dica2");
+                    elementoA.remove(elementoA)
+ document.getElementById("gerar2").style.visibility = "visible";
+                }
+               }
+              }
+            function tema() {
+                var tema = document.getElementById("caracol");
+                if (tema.classList.contains("tematica") == false){
+                    tema.classList.add("tematica");
+                    document.getElementById("tema").innerHTML = "Mudar para tema claro";
+                } else if (tema.classList.contains("tematica") == true){
+                    tema.classList.remove("tematica");
+                    document.getElementById("tema").innerHTML = "Mudar para tema escuro";
+                }
+               }
+             
+
+        </script>
+        <title>Willian</title>
+        <hr><h1 align="center">Meu jogo!</h1><hr>
+    </head>
+    <body id="caracol">
+        <header id="teste">
+            <h2 class="sumir">Joguinho top.</h2>
+            <p class="sumir">(Versão de teste)</p>
+            <p class="sumir">Eu estou pensando em um número... Tente adivinhar ele!</p>
+        </header>
+        <br="apareça">
+        <div id="dica"></div><br id="apareça">
+        <span>Sua tentativa:</span>
+        <input type="number" id="input" placeholder="Digite aqui..." value=""/>
+        <button class="button" id="gerar" onclick="gerar1()">Tente</button>
+        <div id="dica2"></div>
+        <h3 id="win"></h3>
+        <br><button id="gerar2" align="center" style="visibility : hidden" onclick="window.location.reload()">Jogar de novo</button>
+        <button class="button" id="tema" onclick="tema()">Mudar para tema escuro</button>
+    </body>
+</html>
