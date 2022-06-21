@@ -23,7 +23,7 @@ body{
 .tematica > #input{
     border: 2px solid #535355;
     background-color: #535353;
-    color: #FFFFFF;
+    color: #FFFFFF;    
 }
 .tematica > #input::placeholder{
     color: #FFFFFF;
@@ -128,7 +128,7 @@ section1 > p {
 .linha{
     background-color: black;
     border: none;
-    padding: 0.5px;
+    padding: 1px;
 }
 footer > span{
     color: ;

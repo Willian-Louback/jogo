@@ -10,25 +10,25 @@
         <script src="logica.js"></script>
         <title>LogikRandom</title>
     </head>
-    <body id="temas">
+    <body id="temas" class="tematica"><!-- VOU DEIXAR NO MODO ESCURO PADRÃO POR ENQUANTO -->
         <header>
             <hr class="linha"><h1 id="title">LogikRandom</h1><hr class="linha">
         </header>
         <section1>
             <h2>(Versão de teste)</h2>
             <p id="p" class="text">Eu estou pensando em um número... Tente adivinhar ele!</p>
-            <button class="button" id="tema" onclick="tema()">Mudar para tema escuro</button>
+            <button class="button" id="tema" onclick="tema()">Mudar para tema claro</button>
         </section1><br id="aparecer" style="display: none;">
         <span class="text" id="dica"></span>
         <span id="altura" class="text">Sua tentativa:</span>
-        <input type="number" id="input" placeholder="Digite aqui..." value=""/>
+        <input type="text" id="input" placeholder="Digite aqui..." value=""/>
         <button class="button" id="gerar" onclick="gerar1()">Tente</button>
         <span class="text" id="dica2"></span>
         <h3 id="win"></h3>
-        <button class="button" id="gerar2" align="center" onclick="window.location.reload()">Jogar de novo</button>
+        <button class="button" id="gerar2" onclick="window.location.reload()">Jogar de novo</button>
         <hr class="linha">
         <footer>
-            <!-- <a href="fase2.html">fase2</a> -->
+             <!-- <a href="../menu/fase2.html">fase2</a> -->
             <span>Desenvolvido por Willian</span>
         </footer>
     </body>
